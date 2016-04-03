@@ -7,7 +7,7 @@
 Gofr(x, y)
 }
 \arguments{
-\item{2}{numeric vectors}
+\item{2}{columns of a data frame}
 }
 \description{
 Calculates an unbiased correlation coefficient for studies with small sample sizes, from Olkin and Pratt 1958

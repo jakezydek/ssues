@@ -1,5 +1,5 @@
 #' @title G(r): small sample correlation coefficient
-#' @param 2 numeric vectors
+#' @param 2 columns of a data frame
 #' @description Calculates an unbiased correlation coefficient for studies with small sample sizes, from Olkin and Pratt 1958
 #' @references Olkin, I. and J. W. Pratt, 1958, Unbiased estimation of certain correlation coefficients, The Annals of Mathematical Statistics, 29(1): 201-211.
 
@@ -7,7 +7,7 @@
 Gofr<-function(x,y){
   r<-cor(x,y)
   r2<-r^2
-  n<-length(x)+length(y)
+  n<-length(x)
   integrand<-function(z){
     ((z^-.5)*((1-z)^(((n-2)/2)-1))/((1-z*(1-r2))^.5))
   }
