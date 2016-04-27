@@ -10,7 +10,10 @@ RRsigma(x, y)
 \item{2}{vectors}
 }
 \description{
-Calculates the unbiased response ratio and variance for the effect of a treatment in a controlled trial with two groups using the sigma method (Lajeunesse 2015).
+Calculates the unbiased response ratio and associated variance between two groups of a controlled trial, using the sigma method (Lajeunesse 2015).
+}
+\examples{
+RRsigma(sleep[sleep$group==1,1],sleep[sleep$group==2,1])
 }
 \references{
 Lajeunesse, M J.  2015.  Bias and correction for the log response ratio in ecological meta-analysis.  Ecology, 96(8): 2056-2063
